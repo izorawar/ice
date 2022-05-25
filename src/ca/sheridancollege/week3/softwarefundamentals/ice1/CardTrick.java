@@ -35,7 +35,7 @@ public class CardTrick {
         luckyCard.setSuit("Hearts");
         boolean flag = false;
         for(int i = 0; i < magicHand.length; i++) {
-            if(magicHand[i].getValue() == cardNumber && magicHand[i].getSuit().equals(cardSuit)) {
+            if(magicHand[i].getValue() == luckyCard.getValue() && magicHand[i].getSuit().equals(luckyCard.getSuit)) {
                 System.out.println("Card found!");
                 flag = true;
             }
